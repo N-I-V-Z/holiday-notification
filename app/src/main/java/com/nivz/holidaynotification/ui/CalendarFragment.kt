@@ -244,8 +244,8 @@ class CalendarFragment : Fragment() {
         val dayView = container
         dayView.apply {
             setOnClickListener {
+                // Observer will automatically call updateSelectedDateHolidays()
                 viewModel.selectDate(day, currentMonth, currentYear)
-                updateSelectedDateHolidays()
             }
         }
 
@@ -263,11 +263,21 @@ class CalendarFragment : Fragment() {
     }
 
     private fun updateSelectedDateHolidays() {
-        val holidays = viewModel.holidaysForSelectedDate.value ?: emptyList()
+        var holidays = viewModel.holidaysForSelectedDate.value ?: emptyList()
+
+        // Remove duplicate holidays (same day/month/lunar/name)
+        holidays = holidays.distinctBy { "${it.day}/${it.month}/${it.isLunar}/${it.name}" }
+
         if (holidays.isEmpty()) {
             selectedDateHolidays.text = "Không có ngày lễ hôm nay"
         } else {
-            selectedDateHolidays.text = holidays.joinToString("\n") { it.name }
+            selectedDateHolidays.text = holidays.joinToString("\n\n") { holiday ->
+                if (holiday.description.isNotEmpty()) {
+                    "📅 ${holiday.name}\n${holiday.description}"
+                } else {
+                    "📅 ${holiday.name}"
+                }
+            }
         }
     }
 
