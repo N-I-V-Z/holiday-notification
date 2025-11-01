@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Black circular background -->
+    <path
+        android:fillColor="#1a1a1a"
+        android:pathData="M54,0C84.91,0 108,23.09 108,54C108,84.91 84.91,108 54,108C23.09,108 0,84.91 0,54C0,23.09 23.09,0 54,0Z" />
+
+    <!-- Calendar body - white -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M24,30L84,30L84,90L24,90Z" />
+
+    <!-- Calendar top bar -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M24,30L84,30L84,48L24,48Z" />
+
+    <!-- Left ring/hole -->
+    <path
+        android:fillColor="#1a1a1a"
+        android:pathData="M32,20C32,16.686 34.686,14 38,14C41.314,14 44,16.686 44,20C44,23.314 41.314,26 38,26C34.686,26 32,23.314 32,20Z" />
+
+    <!-- Right ring/hole -->
+    <path
+        android:fillColor="#1a1a1a"
+        android:pathData="M64,20C64,16.686 66.686,14 70,14C73.314,14 76,16.686 76,20C76,23.314 73.314,26 70,26C66.686,26 64,23.314 64,20Z" />
+
+    <!-- Horizontal grid lines -->
+    <path
+        android:strokeColor="#1a1a1a"
+        android:strokeWidth="1.5"
+        android:pathData="M24,56L84,56" />
+    <path
+        android:strokeColor="#1a1a1a"
+        android:strokeWidth="1.5"
+        android:pathData="M24,64L84,64" />
+    <path
+        android:strokeColor="#1a1a1a"
+        android:strokeWidth="1.5"
+        android:pathData="M24,72L84,72" />
+    <path
+        android:strokeColor="#1a1a1a"
+        android:strokeWidth="1.5"
+        android:pathData="M24,80L84,80" />
+
+    <!-- Vertical grid lines -->
+    <path
+        android:strokeColor="#1a1a1a"
+        android:strokeWidth="1.5"
+        android:pathData="M40,48L40,90" />
+    <path
+        android:strokeColor="#1a1a1a"
+        android:strokeWidth="1.5"
+        android:pathData="M56,48L56,90" />
+    <path
+        android:strokeColor="#1a1a1a"
+        android:strokeWidth="1.5"
+        android:pathData="M72,48L72,90" />
+
+    <!-- Today indicator - red circle -->
+    <path
+        android:fillColor="#FF5722"
+        android:pathData="M52,60C52,57.239 54.239,55 57,55C59.761,55 62,57.239 62,60C62,62.761 59.761,65 57,65C54.239,65 52,62.761 52,60Z" />
+</vector>
