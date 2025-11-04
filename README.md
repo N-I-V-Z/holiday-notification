@@ -405,20 +405,6 @@ For issues or questions:
 
 ---
 
-**Version**: 1.0 - Foundation Complete
-**Last Updated**: 2024-11-01
-**App Name**: Lịch Ngày Lễ (Holiday Calendar)
-**Build**: Debug
-**Status**: Feature Complete - Ready for Production
-
-### 📊 Project Statistics
-- **Total Commits**: 15
-- **Source Files**: 20+ Kotlin files
-- **Layout Files**: 8 XML layouts
-- **Drawable Resources**: 14+ SVG/XML vectors
-- **Lines of Code**: 4000+
-- **Vietnamese Holidays**: 33 official and traditional holidays (23 solar + 10 lunar)
-
 ## 🎉 Happy Holiday Tracking!
 
 Developed with ❤️ for Vietnamese developers who love clean architecture and offline-first apps.
